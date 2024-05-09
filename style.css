@@ -1,0 +1,108 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "lato", sans-serif;
+}
+
+.container-fluid {
+  height: 100vh;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Background Cover */
+
+.backgroundCover {
+  background-image: url("images/background-image.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* Colors */
+
+.buttonsColor {
+  color: white;
+}
+
+h1 {
+  color: blue;
+}
+
+h2 {
+  color: yellowgreen;
+}
+
+.zerosColor {
+  color: white;
+}
+
+.button i {
+  color: red;
+}
+
+/* Buttons */
+
+.button {
+  background-color: transparent;
+  border: none;
+  transition: all 200ms;
+}
+
+.button:hover {
+  transform: scale(1.2);
+}
+
+/* Circle player's turn animation */
+
+.active {
+  background-color: yellow;
+  width: 15px;
+  height: 15px;
+  animation: scaleChange 800ms;
+}
+
+@keyframes scaleChange {
+  0% {
+    transform: scale(0%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
+
+/* Dice */
+
+.dice {
+  color: white;
+  font-size: 10em;
+}
+
+/* Add result animation */
+
+.addNumber {
+  color: green;
+  animation: addResult 1500ms forwards;
+}
+
+@keyframes addResult {
+  0% {
+    font-size: 0;
+    opacity: 0;
+  }
+  50% {
+    font-size: 25px;
+    opacity: 1;
+  }
+  100% {
+    font-size: 0;
+    opacity: 0;
+  }
+}
